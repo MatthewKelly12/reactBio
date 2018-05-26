@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
 import Bio from './Bio';
+import "./Person.css"
 
 
 class Matthew extends Component {
@@ -19,7 +20,7 @@ class Matthew extends Component {
     }
     render() {
       return (
-        <div>
+        <div class="person">
           <Bio fullName={this.state.fullName}
                cohort={this.state.cohort}
                address={this.state.address}

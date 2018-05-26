@@ -1,14 +1,22 @@
 import React, { Component } from 'react'
+import "./Bio.css"
+import "./Name.css"
+import "./Cohort.css"
+import "./Address.css"
+import "./Car.css"
+import "./Pet.css"
+
+
 
 class Bio extends Component {
     render() {
         return (
-            <div>
-                <h1>Name: {this.props.fullName}</h1>
-                <h2>Cohort: {this.props.cohort}</h2>
-                <h2>Address: {this.props.address}</h2>
-                <h2>Car: {this.props.car}</h2>
-                <h2>Pet: {this.props.pet}</h2>
+            <div class="bio">
+                <h1 class="name">Name: {this.props.fullName}</h1>
+                <h2 class="cohort">Cohort: {this.props.cohort}</h2>
+                <h2 class="address">Address: {this.props.address}</h2>
+                <h2 class="car">Car: {this.props.car}</h2>
+                <h2 class="pet">Pet: {this.props.pet}</h2>
             </div>
         );
     }
